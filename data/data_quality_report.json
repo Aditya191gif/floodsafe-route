@@ -1,0 +1,78 @@
+{
+  "district": "Kanpur Nagar",
+  "state": "Uttar Pradesh",
+  "target_crs": "EPSG:32644",
+  "cell_size_meters": 30.0,
+  "status": "PASS",
+  "checks": {
+    "dem": {
+      "crs": "EPSG:32644",
+      "crs_matches_target": true,
+      "width": 1001,
+      "height": 733,
+      "min_elevation_m": 113.55535125732422,
+      "max_elevation_m": 131.1975860595703,
+      "mean_elevation_m": 123.44828796386719,
+      "nan_count": 0,
+      "valid": true
+    },
+    "rainfall": {
+      "crs": "EPSG:32644",
+      "crs_matches_target": true,
+      "grid_matches_dem": true,
+      "min_mm": 109.5677490234375,
+      "max_mm": 150.7667999267578,
+      "mean_mm": 126.07654571533203,
+      "valid": true
+    },
+    "sar_labels": {
+      "crs": "EPSG:32644",
+      "crs_matches_target": true,
+      "grid_matches_dem": true,
+      "flooded_cells": 82582,
+      "dry_cells": 651151,
+      "flood_extent_percentage": 11.26,
+      "valid": true
+    },
+    "roads": {
+      "count": 18,
+      "crs": "EPSG:4326",
+      "all_geometries_valid": true,
+      "total_network_km": 69.84,
+      "highway_classes": {
+        "primary": 9,
+        "secondary": 5,
+        "trunk": 3,
+        "tertiary": 1
+      },
+      "has_hindi_names": true,
+      "valid": true
+    },
+    "shelters": {
+      "count": 7,
+      "total_capacity": 9150,
+      "all_geometries_valid": true,
+      "has_phone_numbers": true,
+      "has_hindi_names": true,
+      "valid": true
+    },
+    "waterways": {
+      "count": 3,
+      "all_geometries_valid": true,
+      "waterway_names": [
+        "Ganges River",
+        "Pandu River",
+        "Lower Ganga Canal"
+      ],
+      "valid": true
+    }
+  },
+  "summary": {
+    "status": "PASS",
+    "total_road_segments": 18,
+    "total_road_km": 69.84,
+    "total_shelter_capacity": 9150,
+    "flood_extent_percentage": 11.26,
+    "raster_grid_dimensions": "1001 x 733 cells @ 30m resolution"
+  }
+}

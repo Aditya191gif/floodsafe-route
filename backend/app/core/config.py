@@ -1,7 +1,6 @@
 """Application configuration settings using Pydantic Settings."""
 
-from typing import List
-from pydantic import Field, field_validator
+from pydantic import field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -34,7 +33,9 @@ class Settings(BaseSettings):
     ASYNC_DATABASE_URL: str = "sqlite+aiosqlite:///./floodsafe_dev.db"
 
     # Security & CORS
-    ALLOWED_ORIGINS: str = "http://localhost:5173,http://localhost:3000,http://127.0.0.1:5173"
+    ALLOWED_ORIGINS: str = (
+        "http://localhost:5173,http://localhost:3000,http://127.0.0.1:5173"
+    )
 
     # Rate Limiting
     RATE_LIMIT_PER_MINUTE: int = 60
@@ -50,16 +51,22 @@ class Settings(BaseSettings):
     EARTH_ENGINE_PROJECT: str | None = None
 
     @property
-    def cors_origins(self) -> List[str]:
+    def cors_origins(self) -> list[str]:
         """Parse comma-separated origins into a list."""
-        return [origin.strip() for origin in self.ALLOWED_ORIGINS.split(",") if origin.strip()]
+        return [
+            origin.strip()
+            for origin in self.ALLOWED_ORIGINS.split(",")
+            if origin.strip()
+        ]
 
     @property
     def bbox_coords(self) -> tuple[float, float, float, float]:
         """Return bounding box as tuple (min_lon, min_lat, max_lon, max_lat)."""
         coords = [float(x.strip()) for x in self.DISTRICT_BBOX.split(",")]
         if len(coords) != 4:
-            raise ValueError("DISTRICT_BBOX must contain exactly 4 comma-separated floats.")
+            raise ValueError(
+                "DISTRICT_BBOX must contain exactly 4 comma-separated floats."
+            )
         return coords[0], coords[1], coords[2], coords[3]
 
     @field_validator("TARGET_CRS")

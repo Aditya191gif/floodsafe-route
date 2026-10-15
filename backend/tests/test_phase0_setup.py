@@ -1,8 +1,10 @@
 """Phase 0 Setup & Environment Verification Tests."""
 
 from pathlib import Path
+
 import pytest
 from httpx import ASGITransport, AsyncClient
+
 from backend.app.core.config import settings
 from backend.app.main import app
 

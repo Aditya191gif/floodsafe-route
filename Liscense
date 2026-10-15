@@ -1,0 +1,49 @@
+FloodSafe Route - Proprietary License
+Copyright (c) 2026 Aditya Tripathi. All rights reserved.
+
+1. OWNERSHIP
+This software, including its source code, trained models, documentation,
+designs, text, and all related materials (the "Software"), is the exclusive
+property of Aditya Tripathi (the "Owner"). No ownership rights are transferred
+to anyone by the availability of the Software on any platform, including GitHub.
+
+2. NO LICENSE GRANTED
+No license or permission is granted to any person to use, copy, modify, merge,
+publish, distribute, sublicense, sell, host, deploy, reverse engineer, create
+derivative works from, or otherwise reuse the Software or any part of it, for
+any purpose, whether commercial or non-commercial, without the Owner's prior
+written permission.
+
+3. PERMITTED VIEWING ONLY
+Where the Software is made publicly visible, it may be viewed solely for
+personal evaluation, such as review by hackathon judges, educators, or
+prospective employers. Viewing does not grant any right to reuse.
+
+4. PLATFORM TERMS
+If the Software is hosted on GitHub, the rights that GitHub's Terms of Service
+give to other users (such as viewing and forking within the GitHub platform)
+apply only to the extent required by those terms. Those rights do not extend
+to copying, running, modifying, redistributing, or using the Software outside
+that scope.
+
+5. THIRD-PARTY COMPONENTS AND DATA
+The Software may use third-party open-source libraries and open datasets
+(for example OpenStreetMap, Copernicus/Sentinel, SRTM, CHIRPS). These remain
+under their own licenses and terms, which are not changed by this license.
+Required attributions are listed in the project documentation.
+
+6. PERMISSION REQUESTS
+To request permission for any use not granted above, contact the Owner:
+Aditya Tripathi - adityatripath24@gmail.com
+
+7. NO WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. Flood-risk predictions and route suggestions are informational only
+and must not be relied upon as the sole basis for safety or emergency
+decisions. The Owner is not liable for any claim, damages, or other liability
+arising from the use of, or inability to use, the Software.
+
+8. TERMINATION
+Any use in breach of this license is unauthorized and automatically terminates
+any permission the Owner may have given. The Owner reserves the right to
+enforce these terms by all available legal means.

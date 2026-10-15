@@ -1,0 +1,48 @@
+# FloodSafe Route — Pinned Python Dependencies
+# Checked & Locked on 2026-10-14 (See docs/STACK.md)
+# Python 3.11.15
+
+# Core Web & API
+fastapi==0.143.1
+uvicorn==0.54.0
+pydantic==2.14.1
+pydantic-settings==2.16.0
+slowapi==0.1.10
+
+# Database & ORM
+sqlalchemy==2.0.54
+geoalchemy2==0.20.0
+alembic==1.20.0
+psycopg[binary]==3.3.6
+aiosqlite==0.21.0
+
+# Geospatial & Network
+geopandas==1.2.0
+shapely==2.2.0
+pyproj==3.8.0
+osmnx==2.1.1
+networkx==3.7
+
+# Raster & Remote Sensing
+rasterio==1.5.2
+xarray==2026.9.0
+rioxarray==0.23.0
+earthengine-api==1.7.48
+
+# Machine Learning & Numerics
+numpy==2.5.0
+pandas==3.0.6
+scikit-learn==1.9.1
+xgboost==3.4.1
+shap==0.53.0
+imbalanced-learn==0.14.2
+joblib==1.5.3
+
+# Testing & Quality
+pytest==9.1.1
+pytest-cov==7.1.0
+pytest-asyncio==1.4.0
+httpx==0.28.1
+ruff==0.16.2
+black==25.1.0
+mypy==2.4.0
